@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --shadow-1: 0 .125rem .25rem rgba(0,0,0,.075);
+  --shadow-2: 0 .5rem 1rem rgba(0,0,0,.15);
+  --shadow-3: 0 1rem 3rem rgba(0,0,0,.175);
+}
+
+body {
+  background-color: #e9e9e9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: poppins;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+  padding: 10px;
+  border-bottom: 4px solid #aeaeae; 
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+header .header-logo {
+  width: 10%;
+}
+
+header .header-logo img {
+  max-width: 100%;
+}
+
+header .header-content {
+  width: 80%;
+}
+
+.tab-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative; 
+  top: 79px;
+}
+
+.tab-section .tab-menu {
+  height: 90vh;
+  min-width: 300px;
+  background-color: #333333;
+  color: #fff;
+  overflow: scroll;
+}
+
+.tab-section .tab-menu ul li {
+  display: block;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.tab-section .tab-menu ul li a {
+  display: block;
+  font-size: 14px;
+  padding: 15px 10px 15px 20px;
+  color: #fff;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.tab-section .tab-menu ul li a i:nth-child(1) {
+  margin-right: 15px;
+}
+
+.tab-section .tab-menu ul li a:hover {
+  background-color: #131313;
+}
+
+.tab-section .tab-menu ul li .dropdown-item {
+  position: relative;
+}
+
+.tab-section .tab-menu ul li .dropdown-item.active {
+  background-color: #131313;
+}
+
+.tab-section .tab-menu ul li .dropdown-item::after {
+  content: "\f107";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  right: 15px;
+  top: 18px;
+}
+
+.tab-section .tab-menu ul li .dropdown-item.active::after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.tab-section .tab-menu ul li .dropdown-menu {
+  height: 0;
+  overflow: hidden;
+}
+
+/* .tab-section .tab-menu ul li .dropdown-menu.active {
+  height: auto;
+  overflow: auto;
+} */
+
+.tab-section .tab-content {
+  width: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.tab-section .tab-content .tab-pane {
+  margin-bottom: 20px;
+  display: none;
+}
+
+.tab-section .tab-content .tab-pane.active {
+  display: block;
+}
+/*# sourceMappingURL=style.css.map */
